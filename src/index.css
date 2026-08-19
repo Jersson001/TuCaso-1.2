@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Cinzel", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-navy: #0F2C59;
+  --color-gold: #DAC0A3;
+  --color-ivory: #F8F9FA;
+  --color-dark: #1E2229;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory text-dark font-sans antialiased;
+  }
+}
+
+.glow-btn {
+  @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(218,192,163,0.5)];
+}

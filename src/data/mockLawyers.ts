@@ -1,0 +1,147 @@
+export interface MockLawyer {
+  id: string;
+  name: string;
+  avatar: string;
+  rating: number;
+  reviewsCount: number;
+  casesCount: number;
+  csjCard: string;
+  city: string;
+  specialtyMain: "Familia" | "Penal" | "Laboral" | "Civil" | "Comercial" | "Administrativo";
+  specialties: string[];
+  bio: string;
+  experienceYears: number;
+  hourlyRate: string;
+  verified: boolean;
+}
+
+export const MOCK_LAWYERS: MockLawyer[] = [
+  {
+    id: "lawyer-1",
+    name: "Dra. Valentina Ospina Gómez",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80",
+    rating: 4.9,
+    reviewsCount: 58,
+    casesCount: 64,
+    csjCard: "TP-312459-CSJ",
+    city: "Bogotá D.C.",
+    specialtyMain: "Familia",
+    specialties: ["Derecho de Familia", "Violencia Intrafamiliar", "Custodia y Alimentos", "Divorcios"],
+    bio: "Especialista en Derecho de Familia de la Universidad del Rosario con 12 años de experiencia en conciliación, violencia intrafamiliar y custodia de menores.",
+    experienceYears: 12,
+    hourlyRate: "Consulta inicial sin costo",
+    verified: true,
+  },
+  {
+    id: "lawyer-2",
+    name: "Dr. Carlos Eduardo Restrepo",
+    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80",
+    rating: 4.8,
+    reviewsCount: 42,
+    casesCount: 51,
+    csjCard: "TP-284910-CSJ",
+    city: "Bogotá D.C.",
+    specialtyMain: "Penal",
+    specialties: ["Derecho Penal", "Defensa Penal", "Delitos Económicos", "Fiscalía"],
+    bio: "Magíster en Derecho Penal de la Universidad Nacional. Ex-fiscal seccional con amplia trayectoria en defensa técnica ante la Fiscalía y Tribunales.",
+    experienceYears: 15,
+    hourlyRate: "Atención inmediata 24/7",
+    verified: true,
+  },
+  {
+    id: "lawyer-3",
+    name: "Dra. Carolina Mendoza Silva",
+    avatar: "https://images.unsplash.com/photo-1580894732468-9111ad068221?auto=format&fit=crop&w=300&q=80",
+    rating: 5.0,
+    reviewsCount: 39,
+    casesCount: 45,
+    csjCard: "TP-359124-CSJ",
+    city: "Medellín",
+    specialtyMain: "Laboral",
+    specialties: ["Derecho Laboral", "Despidos Injustificados", "Liquidaciones", "Acoso Laboral"],
+    bio: "Asesora experta en fuero de maternidad, fueros de salud y reclamo de indemnizaciones laborales tanto para trabajadores como empresas.",
+    experienceYears: 9,
+    hourlyRate: "Honorarios por resultado",
+    verified: true,
+  },
+  {
+    id: "lawyer-4",
+    name: "Dr. Fernando Ruiz Barrientos",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+    rating: 4.9,
+    reviewsCount: 67,
+    casesCount: 78,
+    csjCard: "TP-198420-CSJ",
+    city: "Cali",
+    specialtyMain: "Civil",
+    specialties: ["Derecho Civil", "Contratos y Arriendos", "Embargos", "Cobro de Deudas"],
+    bio: "Especialista en litigio civil, restituciones de inmueble arrendado y recuperación de cartera morosa. Más de 18 años de ejercicio profesional.",
+    experienceYears: 18,
+    hourlyRate: "Consulta presencial y virtual",
+    verified: true,
+  },
+  {
+    id: "lawyer-5",
+    name: "Dr. Camilo Andrés Vargas",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+    rating: 4.7,
+    reviewsCount: 31,
+    casesCount: 38,
+    csjCard: "TP-412093-CSJ",
+    city: "Barranquilla",
+    specialtyMain: "Comercial",
+    specialties: ["Derecho Comercial", "Creación de Empresas", "Registro de Marcas", "Sociedades"],
+    bio: "Consultor legal corporativo. Apoyo integral a emprendimientos, PyMES y sociedades comerciales en contratación y marcas ante la SIC.",
+    experienceYears: 8,
+    hourlyRate: "Planes mensuales corporativos",
+    verified: true,
+  },
+  {
+    id: "lawyer-6",
+    name: "Dra. Sofía Morales Beltrán",
+    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=300&q=80",
+    rating: 4.9,
+    reviewsCount: 44,
+    casesCount: 52,
+    csjCard: "TP-301984-CSJ",
+    city: "Bogotá D.C.",
+    specialtyMain: "Administrativo",
+    specialties: ["Derecho Administrativo", "Acciones de Tutela", "Licitaciones", "Derecho de Petición"],
+    bio: "Especialista en Derecho Constitucional y Administrativo. Redacción de tutelas de urgencia, recursos ante la administración pública y demandas contra el Estado.",
+    experienceYears: 11,
+    hourlyRate: "Respuestas en menos de 24 horas",
+    verified: true,
+  },
+  {
+    id: "lawyer-7",
+    name: "Dr. Santiago Gutiérrez Castro",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+    rating: 4.8,
+    reviewsCount: 29,
+    casesCount: 33,
+    csjCard: "TP-389102-CSJ",
+    city: "Medellín",
+    specialtyMain: "Familia",
+    specialties: ["Derecho de Familia", "Sucesiones y Herencias", "Testamentos", "Patrimonio Familiar"],
+    bio: "Abogado especialista en procesos de sucesión contenciosos y de mutuo acuerdo, protección del patrimonio familiar y capitulaciones.",
+    experienceYears: 10,
+    hourlyRate: "Primera evaluación sin costo",
+    verified: true,
+  },
+  {
+    id: "lawyer-8",
+    name: "Dra. Andrea Pilar Benítez",
+    avatar: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&w=300&q=80",
+    rating: 4.9,
+    reviewsCount: 53,
+    casesCount: 61,
+    csjCard: "TP-267491-CSJ",
+    city: "Cali",
+    specialtyMain: "Laboral",
+    specialties: ["Derecho Laboral", "Accidentes de Trabajo", "Pensiones", "Incapacidades"],
+    bio: "Litigante especialista en reclamación de pensión de invalidez, sobrevivientes y responsabilidad del empleador en accidentes laborales.",
+    experienceYears: 14,
+    hourlyRate: "Honorarios condicionados a éxito",
+    verified: true,
+  }
+];

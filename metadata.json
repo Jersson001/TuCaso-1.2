@@ -1,0 +1,8 @@
+{
+  "name": "TuCaso",
+  "description": "El Marketplace de Abogados de Colombia. Justicia de vanguardia y conexión con especialistas verificados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
